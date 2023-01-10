@@ -1,0 +1,43 @@
+/* TODO: Enlarge image if clicked on. */
+/* .projects__img {
+    transition: transform 0.25s ease;
+}
+
+.projects__img img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+} */
+
+.btn--projects {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn--projects:hover {
+    color: #333;
+    background-color: rgb(118, 170, 230);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__skill {
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+    background: rgb(160, 205, 255);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+}
+
+/* Resize */
+@media (max-width: 1000px) {
+    .btn--projects {
+        padding: 1.2rem 1rem;
+    }
+}

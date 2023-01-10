@@ -1,0 +1,567 @@
+/* Big Header */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    /* background: rgb(203, 124, 124); */
+    background: #fff;
+    box-shadow: 0 10px 100px rgb (0 0 0 / 10%);
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__links {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.header__link {
+    padding: 2.2rem 3rem;
+    display: inline-block;
+    /* font-size: 1.6rem; */
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+/* .header__logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+} */
+
+.header__logo-img-cont {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem; /* Extra */
+    /* background: rgb(118, 170, 230); */
+}
+
+.header__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.header__logo-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color 0.3s;
+    font-size: 1.2rem;
+}
+
+/* Smaller Header */
+.header__main-menu-cont {
+    display: none;
+    width: 3rem;
+    padding: 2.2rem 0;
+}
+
+@media only screen and (max-width: 49.8125em) {
+    .header__main-menu-cont {
+        display: block;
+    }
+    .header__links {
+        display: none;
+    }
+    .about__content {
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 8rem; */
+        /* display: none; */
+    }
+    .about__content-photos {
+        display: none;
+    }
+}
+
+.header__main-open {
+    width: 80%;
+    /* width: 100%; */
+}
+
+.header__sm-menu {
+    /* background: rgb(203, 124, 124); */
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
+}
+
+.header__sm-menu-border {
+    border-top: 1px solid #ccc;
+    padding: 2rem 3rem;
+    text-align: right;
+}
+
+.header__sm-menu-link {
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color 0.3s;
+    font-size: 1.2rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: rgb(90, 128, 171);
+}
+
+a:hover {
+    color: rgb(118, 170, 230);
+}
+
+a::after {
+    color: rgb(90, 128, 171);
+}
+
+/* Sizing */
+@media only screen and (max-width: 56.25em) {
+    .header__content {
+        padding: 0 2rem;
+    }
+    html {
+        font-size: 56%;
+    }
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        /* font-size: 59%; */
+        font-size: 70%;
+    }
+}
+
+/* Home Page */
+body {
+    box-sizing: border-box;
+    position: relative;
+    /* line-height: 1.5; */
+    line-height: 1.2;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+/* Home Banner */
+.home-banner {
+    color: #fff;
+    background: linear-gradient(
+            to right,
+            rgba(245, 245, 245, 0.8),
+            rgba(245, 245, 245, 0.8)
+        ),
+        url("https://img.freepik.com/free-vector/abstract-gray-geometric-pattern-background_1035-18654.jpg");
+    background-position: center;
+    height: 100vh;
+}
+
+.home-banner__content {
+    position: relative;
+    top: 37%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    max-width: 69rem;
+    width: 92%;
+}
+
+.heading-primary {
+    /* font-size: 6rem; */
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 49.8125em) {
+    .heading-primary {
+        font-size: 4.5rem;
+    }
+}
+
+.home-banner__info {
+    /* margin: 3rem auto 0 auto; */
+    max-width: 80rem;
+    position: relative;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 69rem;
+    width: 92%;
+}
+
+.text-primary {
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+/* About me Button */
+.home-banner__btn {
+    position: relative;
+    top: 38%;
+    text-align: center;
+}
+
+.btn--bg {
+    padding: 1.5rem 8rem;
+    font-size: 1.2rem;
+}
+
+.btn--bg:hover {
+    color: #333;
+    transform: translateY(-5px);
+}
+
+.btn {
+    background: rgb(131, 187, 252);
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+    transition: transform 0.3s;
+}
+
+.home-banner__socials {
+    top: 15%;
+    position: absolute;
+    transform: translateY(-50%);
+    /* background: #fff; */
+    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+    padding: 0.5rem;
+    display: incline-block;
+}
+
+.home-banner__social {
+    width: 4rem;
+}
+
+.home-banner__social-icon-link {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    transition: background 0.3s;
+    border-radius: 5px;
+    background: none;
+}
+
+.home-banner__social-icon-link:hover {
+    background: rgb(131, 187, 252);
+}
+
+.home-banner__social-icon {
+    width: 100%;
+}
+
+@media only screen and (max-width: 56em) {
+    .home-banner__socials {
+        display: none;
+    }
+}
+
+/* About */
+.about {
+    background: #fafafa;
+}
+
+.sec-pad {
+    padding: 12rem 0;
+}
+
+.main-container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+.heading-sec__mb-med {
+    margin-bottom: 9rem;
+}
+
+.heading-sec__main {
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    color: #111;
+}
+
+.heading-sec__main::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 3rem;
+    background: rgb(131, 187, 252);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.heading-sec__sub {
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 80rem;
+    margin: auto;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    font-size: medium;
+}
+
+/* About Content */
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.about__content-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    letter-spacing: 1px;
+    position: relative;
+    color: #111;
+}
+
+.about__content-details-para {
+    font-size: 1.3rem;
+    color: #666;
+    max-width: 60rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: medium;
+
+    margin: auto;
+    letter-spacing: 3px;
+}
+
+.btn--about {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.btn--about:hover {
+    color: #333;
+    /* transform: translateY(-5px); */
+    background-color: rgb(118, 170, 230);
+}
+
+/* About Images */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.allSlide {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contact */
+.contact {
+    background: linear-gradient(
+            to right,
+            rgba(245, 245, 245, 0.8),
+            rgba(245, 245, 245, 0.8)
+        ),
+        url(https://img.freepik.com/free-vector/abstract-gray-geometric-pattern-background_1035-18654.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+    background: linear-gradient(
+            to right,
+            rgba(245, 245, 245, 0.8),
+            rgba(245, 245, 245, 0.8)
+        ),
+        url("https://img.freepik.com/free-vector/abstract-gray-geometric-pattern-background_1035-18654.jpg");
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: rgb(118, 170, 230);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(90, 128, 171);
+}
+
+.contact__container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 75%;
+    align-items: center;
+    margin: 0 auto;
+    height: 68%;
+}
+
+.contact__label {
+    color: #333;
+
+    font-size: 1.2rem;
+    max-width: 60rem;
+    line-height: 1.5;
+
+    margin: auto;
+    letter-spacing: 1.5px;
+}
+
+.contact__submit {
+    float: right;
+}
+
+/* Footer */
+/* TODO: Add footer */
+.footer {
+    background: #333;
+    margin-top: auto;
+    max-height: 100wh;
+}
+
+.sec-pad_footer {
+    padding: 12rem 0;
+}

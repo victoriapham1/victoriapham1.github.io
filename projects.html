@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./stylesheets/index.css" />
+        <link rel="stylesheet" href="./stylesheets/service.css"/>
+        <link rel="stylesheet" href="./stylesheets/projects.css"/>
+        <link rel="icon" type="image/png" href="./img/logo.png"/>
+
+        <script src="./js/index.js"></script>
+        <script src="./js/projects.js"></script>
+        <title>Victoria Pham</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo-container">
+                    <a href="./index.html" class="header__logo-link">
+                        <div class="header__logo-img-cont">
+                            <img
+                                src="./img/logo.png"
+                                alt="Victoria Pham logo"
+                                class="header__logo-img"
+                            />
+                        </div>
+                        <span>Victoria Pham</span>
+                    </a>
+                </div>
+                <div class="header__main">
+                    <ul class="header__links">
+                        <li class="header__link-wrapper">
+                            <a href="index.html#about" class="header__link"
+                                >About</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="./projects.html" class="header__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="./service.html" class="header__link"
+                                >Service</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="index.html#contact" class="header__link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="header__main-menu-cont">
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
+                            alt="menu open"
+                            class="header__main-open"
+                            onClick="clickNavBar()"
+                            id="navbar-click"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="header__sm-menu" id="sm-menu-open">
+                <div class="header__sm-menu-content">
+                    <ul class="header__sm-menu-links">
+                        <li class="header__sm-menu-border">
+                            <a href="#index.html#about" class="header__sm-menu-link">About</a>
+                        </li>
+                        <li class="header__sm-menu-border">
+                            <a href="./projects.html" class="header__sm-menu-link">Projects</a>
+                        </li>
+                        <li class="header__sm-menu-border">
+                            <a href="service.html" class="header__sm-menu-link">Service</a>
+                        </li class="header__sm-menu-border">
+                        <li class="header__sm-menu-border">
+                            <a href="#index.html#contact" class="header__sm-menu-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <section id="service" class="about sec-pad">
+        <div class="main-container">
+            <h2 class="heading heading-sec heading">
+                <span class="heading-sec__main">
+                    Projects
+                </span>
+                <span class="heading-sec__sub">
+                    Here you can find some of the projects I've had the opportunity to work on and learn from within previous classes, internships, and personal projects.
+                </span>
+            </h2>
+        </div>
+        <br><br><br><br>
+
+        <div class="projects__sections">
+            <!-- Pom & Honey Section -->
+            <section class="project__section">
+                <div class="container reveal">
+                    <div class="text-container">
+                        <div class="text-box-image">
+                            <img src="./img/project-pom-and-honey.png" style="width: 100%;">
+
+                            <br>
+                            <br>
+                            <center>
+                                <a href="https://github.com/CSCE315-F22-Taele/Team-53-Project_3" target="_blank" rel="noopener noreferrer" class="btn btn--projects">View</a>
+                            </center>
+                        </div>
+
+                        <div class="text-box">
+                            <h3>Pom & Honey POS System</h3>
+                            <h4>Sep - Dec 2022</h4>
+                            <p style="color:rgb(104, 171, 247);"><strong>───</strong></p>
+                            <p>This project was a point of sale website that caters towards a customer, cashier and manager roles. Customers are given the ablity to order and check order status. Cashiers are able to log in via Google OAuth, view and complete current orders, and submit orders. Managers have the above functionalties, as well as update inventory and menu items, view sale reports, and manage employee information. To improve user experience and expand accessiblitiy, Google Translate and Maps were implemented. This website is ADA and WCAG compliant.</p>
+                            <br>
+                            <div class="skills">
+                                <div class="skills__skill">React.js</div>
+                                <div class="skills__skill">Express.js</div>
+                                <div class="skills__skill">PostgreSQL</div>
+                                <div class="skills__skill">API</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NCTTA Notif System -->
+            <section class="service__section">
+                <div class="container reveal">
+                    <div class="text-container">
+                        <div class="text-box-image">
+                            <img src="./img/project-nctta-telynx.png" style="width: 100%;">
+                        </div>
+
+                        <div class="text-box">
+                            <h3>Notifcation System Integration</h3>
+                            <h4>Jun - Sep 2022</h4>
+                            <p style="color:rgb(104, 171, 247);"><strong>───</strong></p>
+                            <p>During my NCTTA software engineer internship, we integrated the Telnyx Messaging API with the current NCTTA ASP.NET Core framework to allow for easier communication among the association. We helped determine API endpoints to receive webhooks and alter the database model and integrate the database to store specific webhook information.</p>
+                            <br>
+                            <div class="skills">
+                                <div class="skills__skill">ASP.NET</div>
+                                <div class="skills__skill">Microsoft Azure</div>
+                                <div class="skills__skill">C#</div>
+                                <div class="skills__skill">NoSQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personal Website Section -->
+            <section class="service__section">
+                <div class="container reveal">
+                    <div class="text-container">
+                        <div class="text-box-image">
+                            <img src="./img/logo.png" style="width: 100%;">
+
+                            <br>
+                            <br>
+                            <center>
+                                <a href="https://github.com/victoriapham1/victoriapham1.github.io" target="_blank" rel="noopener noreferrer" class="btn btn--projects">View</a>
+                            </center>
+                        </div>
+
+                        <div class="text-box">
+                            <h3>Victoria Pham's Website</h3>
+                            <h4>Aug 2022 - present</h4>
+                            <p style="color:rgb(104, 171, 247);"><strong>───</strong></p>
+                            <p>This website is a personal website made with the progression of my knowledge in HTML, CSS, and Javascript. I aim to continue to update and grow my website as I learn and expand on my skill sets.</p>
+                            <br>
+                            <div class="skills">
+                                <div class="skills__skill">HTML</div>
+                                <div class="skills__skill">CSS</div>
+                                <div class="skills__skill">Javascript</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+</body>

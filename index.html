@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./stylesheets/index.css" />
+        <link rel="icon" type="image/png" href="./img/logo.png"/>
+
+        <script src="./js/index.js"></script>
+        <title>Victoria Pham</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo-container">
+                    <a href="./index.html" class="header__logo-link">
+                        <div class="header__logo-img-cont">
+                            <img
+                                src="./img/logo.png"
+                                alt="Victoria Pham logo"
+                                class="header__logo-img"
+                            />
+                        </div>
+                        <span>Victoria Pham</span>
+                    </a>
+                </div>
+                <div class="header__main">
+                    <ul class="header__links">
+                        <li class="header__link-wrapper">
+                            <a href="#about" class="header__link"
+                                >About</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="./projects.html" class="header__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="./service.html" class="header__link"
+                                >Service</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="#contact" class="header__link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="header__main-menu-cont">
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
+                            alt="menu open"
+                            class="header__main-open"
+                            onClick="clickNavBar()"
+                            id="navbar-click"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="header__sm-menu" id="sm-menu-open">
+                <div class="header__sm-menu-content">
+                    <ul class="header__sm-menu-links">
+                        <li class="header__sm-menu-border">
+                            <a href="#about" class="header__sm-menu-link">About</a>
+                        </li>
+                        <li class="header__sm-menu-border">
+                            <a href="./projects.html" class="header__sm-menu-link">Projects</a>
+                        </li>
+                        <li class="header__sm-menu-border">
+                            <a href="./service.html" class="header__sm-menu-link">Service</a>
+                        </li class="header__sm-menu-border">
+                        <li class="header__sm-menu-border">
+                            <a href="#contact" class="header__sm-menu-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="home-banner">
+            <div class="home-banner__content">
+                <h1 class="heading-primary"></h1>
+            </div>
+            <div class="home-banner__info">
+                <p class="text-primary">Aspiring software engineer and applying my textbook knowledge into developing full-stack applications.</p>
+            </div>
+            <div class="home-banner__btn">
+                <a href="#about" class="btn btn--bg">Meet me.</a>
+            </div>
+            <div class="home-banner__socials">
+                <div class="home-banner__social">
+                    <a href="https://www.linkedin.com/in/victoria-pham-245897207/" class="home-banner__social-icon-link" rel ="noreferrer" target="_blank">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg" alt="Victoria Pham LinkedIn Profile" class="home-banner__social-icon">
+                    </a>
+                </div>
+                <div class="home-banner__social">
+                    <a href="https://github.com/victoriapham1" class="home-banner__social-icon-link" rel ="noreferrer" target="_blank">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg" alt="Victoria Pham Github" class="home-banner__social-icon">
+                    </a>
+                </div>
+                <div class="home-banner__social">
+                    <a href="mailto:tramanhp@gmail.com" class="home-banner__social-icon-link" rel ="noreferrer" target="_blank">
+                        <img src="./img/email-img.svg" alt="Victoria Pham Github" class="home-banner__social-icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about sec-pad">
+            <div class="main-container">
+                <h2 class="heading heading-sec heading">
+                    <span class="heading-sec__main">
+                        About Me
+                    </span>
+                    <span class="heading-sec__sub">
+                        Welcome to my personal website! Here you can learn more about me and the projects I've worked on. 
+                    </span>
+                </h2>
+                <div class="about__content">
+                    <div class="about__content-bio">
+                        <h3 class="about__content-title">Hello!</h3>
+                        <div class="about__content-details">
+                            <p class="about__content-details-para">
+                                I am a junior computer science major with a minor in cybersecurity at <b>Texas A&M University, College Station</b> graduating this <b>Fall 2023</b>.
+                            </p>
+                            <br>
+                            <p class="about__content-details-para">
+                                Although I grew up in a very tech savvy family, I never had a passion for computers until I begin working with software. You can view a a few highlighted projects <a href="./projects.html"><b>here</b></a>. I fell in love with the way of thinking computer science allows me, that thoroughly challenge my creativity and problem solving skills. This website is an accumulation of the skills and knowledge I've gained in my continuous learning journey.
+                            </p>
+                            <br>
+                            <p class="about__content-details-para">
+                                During my free time, I enjoy trying new things and being out and about, whether it's <a href="./service.html"><b>volunteering</b></a>, hanging out with friends and family and working out. Some of my other hobbies include playing table tennis, building legos and learning to cook/bake.
+                            </p>
+                            <br><br>
+                            <a href="./img/VPham_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--about">Resume</a>
+                            <a href="#contact" class="btn btn--about">Contact</a>
+                        </div>
+                    </div>
+                    <div class="about__content-photos">
+                        <!-- <br><br><br><br><br> -->
+                        <div class="slideshow-container" id="about__slides">
+                            <!-- Full-width images with number and caption text -->
+                            <div class="allSlide fade about__slide">
+                              <img src="./img/headshot.jpg" style="width:100%">
+                            </div>
+                          
+                            <div class="allSlide fade about__slide">
+                              <img src="./img/about-football.jpg" style="width:100%">
+                            </div>
+                          
+                            <div class="allSlide fade about__slide">
+                              <img src="./img/about-ra.jpg" style="width:100%">
+                            </div>
+                          
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                          </div>
+                          <br>
+                          
+                          <!-- The dots:-->
+                          <!-- about__dot to destinguish between other slideshows (eg: service), is not referenced in .css -->
+                          <div style="text-align:center">
+                            <span class="dot about__dot" onclick="currentSlide(1)"></span>
+                            <span class="dot about__dot" onclick="currentSlide(2)"></span>
+                            <span class="dot about__dot" onclick="currentSlide(3)"></span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact sec-pad">
+            <div class="contact main-container">
+                <h2 class="heading heading-sec heading">
+                    <span class="heading-sec__main">
+                        Contact Me
+                    </span>
+                    <span class="heading-sec__sub">
+                        I am always open to opportunities that allows me to contribute and grow. Feel free to contact me by filling out this form and I will get back to you!
+                    </span>
+                </h2>
+                <br><br>
+                <div class="contact__container">
+                    <!-- <form method="POST" name="myemailform" action="form-to-email.php"> -->
+                    <form action="https://formsubmit.co/38e19a62af2ed5d7b70cb5ddf3348c46" method="POST">
+                      <label for="fname" class="contact__label">Name</label>
+                      <input type="text" name="name" placeholder="Your name.." required>
+                  
+                      <label for="lname" class="contact__label">Email</label>
+                      <input type="text" name="email" placeholder="Your email.." required>
+                  
+                      <label for="subject" class="contact__label">Message</label>
+                      <textarea name="message" placeholder="Write a message.." style="height:200px" required></textarea>
+                  
+                      <input type="submit" value="Submit" class="contact__submit">
+
+                      <input type="hidden" name="_next" value="https://victoriapham1.github.io/">
+                    </form>
+                  </div>
+            </div>
+        </section>
+        
+        <!-- TODO: Add footer. -->
+        <!-- <section class="footer sec-pad">
+            <p>Yay</p>
+        </section> -->
+    </body>
+</html>

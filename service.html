@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./stylesheets/index.css" />
+        <link rel="stylesheet" href="./stylesheets/service.css"/>
+        <link rel="icon" type="image/png" href="./img/logo.png"/>
+
+        <script src="./js/index.js"></script>
+        <script src="./js/service.js"></script>
+        <title>Victoria Pham</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo-container">
+                    <a href="./index.html" class="header__logo-link">
+                        <div class="header__logo-img-cont">
+                            <img
+                                src="./img/logo.png"
+                                alt="Victoria Pham logo"
+                                class="header__logo-img"
+                            />
+                        </div>
+                        <span>Victoria Pham</span>
+                    </a>
+                </div>
+                <div class="header__main">
+                    <ul class="header__links">
+                        <li class="header__link-wrapper">
+                            <a href="index.html#about" class="header__link"
+                                >About</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="./projects.html" class="header__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="./service.html" class="header__link"
+                                >Service</a
+                            >
+                        </li>
+                        <li class="header__link-wrapper">
+                            <a href="index.html#contact" class="header__link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="header__main-menu-cont">
+                        <img
+                            src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
+                            alt="menu open"
+                            class="header__main-open"
+                            onClick="clickNavBar()"
+                            id="navbar-click"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="header__sm-menu" id="sm-menu-open">
+                <div class="header__sm-menu-content">
+                    <ul class="header__sm-menu-links">
+                        <li class="header__sm-menu-border">
+                            <a href="#index.html#about" class="header__sm-menu-link">About</a>
+                        </li>
+                        <li class="header__sm-menu-border">
+                            <a href="./projects.html" class="header__sm-menu-link">Projects</a>
+                        </li>
+                        <li class="header__sm-menu-border">
+                            <a href="service.html" class="header__sm-menu-link">Service</a>
+                        </li class="header__sm-menu-border">
+                        <li class="header__sm-menu-border">
+                            <a href="#index.html#contact" class="header__sm-menu-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <section id="service" class="about sec-pad">
+        <div class="main-container">
+            <h2 class="heading heading-sec heading">
+                <span class="heading-sec__main">
+                    Service
+                </span>
+                <span class="heading-sec__sub">
+                    I am a huge advocate in passing back kindness, and am always ready to give back to my community in any way that I can. Below are a few examples of my highlighted extracurricular activities, volunteer and leadership roles. These activites have made an impact on my life, and I aim to give back to the community and youth to the best of my ability.
+                </span>
+            </h2>
+        </div>
+        <br><br><br><br>
+        <div class="service__sections">
+            <!-- Table Tennis Section -->
+            <section class="service__section">
+              <section id="service__table-tennis">
+                <div class="container reveal">
+                  <div class="text-container">
+                    <div class="text-box-image">
+                    <div class="service__slideshow-container" id="tt__slides">
+                        
+                        <div class="allSlide fade tt__slide">
+                          <img src="./img/service-tt-doubles.jpg" style="width:100%;">
+                        </div>
+                      
+                        <div class="allSlide fade tt__slide">
+                          <img src="./img/service-tt-team.jpg" style="width:100%">
+                        </div>
+                      
+                        <!-- <div class="allSlide fade tt__slide">
+                          <img src="./img/service-tt-shot.jpg" style="width:100%">
+                        </div> -->
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                     
+                   
+                      <div style="text-align:center">
+                        <!-- <span class="dot tt__dot" onclick="currentSlide(1)"></span> -->
+                        <span class="dot tt__dot" onclick="currentSlide(2)"></span>
+                        <span class="dot tt__dot" onclick="currentSlide(3)"></span>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="text-box">
+                        <h3>Table Tennis</h3>
+                        <h4>2011 - present</h4>
+                        <p style="color:rgb(104, 171, 247);"><strong>───</strong></p>
+                        <p>I began playing competitive table tennis when I was 10 years old under my dad's encouragement. In college, I am a part of the Texas A&M Collegiate team and officer for the <a href="https://www.instagram.com/tamutabletennisclub/" target="_blank" rel="noopener noreferrer">Texas A&M Table Tennis Club</a>, where I help supervise weekly practices, manage the club finances, and coach newer members. In the Spring 2022, our school did an award sweep for the National Collegiate Table Tennis (NCTTA) South Texas Divisionals Team & Singles Events, and as well as directly qualified for the Collegiate Championships.</p>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- Lion dancing -->
+            <section class="service__section">
+                <section id="service__lion-dance">
+                  <div class="container reveal">
+                    <div class="text-container">
+                      <div class="text-box-image">
+                        <div class="service__slideshow-container">
+                        
+                            <div class="allSlide fade lion__slide">
+                                <img src="./img/service-lion-multi.jpg" style="width:100%;">
+                            </div>
+                            
+                            <div class="allSlide fade lion__slide">
+                                <img src="./img/service-lion-group.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="allSlide fade lion__slide">
+                                <img src="./img/service-lion-gdpt.jpeg" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="lion_plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="lion_plusSlides(1)">&#10095;</a>
+                         
+                       
+                          <div style="text-align:center">
+                            <span class="dot lion__dot" onclick="lion_currentSlide(1)"></span>
+                            <span class="dot lion__dot" onclick="lion_currentSlide(2)"></span>
+                            <span class="dot lion__dot" onclick="lion_currentSlide(3)"></span>
+                          </div>
+                        </div>
+                        </div>
+                      <div class="text-box">
+                          <h3>Lion dance</h3>
+                          <h4>2011 - present</h4>
+                          <p style="color:rgb(104, 171, 247);"><strong>───</strong></p>
+                          <p>In Vietnamese culture, lion dancing is recognized as a symbol of luck for the Lunar New Year and special occasions. Within the <a href="https://huyenquang.org/" target="_blank" rel="noopener noreferrer">Huyen Quang Buddhist Youth Association</a>, a non-profit organization, I have volunteered and performed at countless businesses, schools, and events throughout the Houston, TX community in over 10 years. In 2020, I formed and led the first lion dance act for the National Chinese Honor Society (NCHS) at Dulles High School for our <a href="https://photos.app.goo.gl/YGQaPnDwXdmc6F1DA" target="_blank" rel="noopener noreferrer">Multicultural Show</a> that left a precedent where a performance was put on under NCHS each year since.</p>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+            <!-- GDPT -->
+            <section class="service__section">
+                <section id="service__gdpt">
+                  <div class="container reveal">
+                    <div class="text-container">
+                      <div class="text-box-image">
+                      <div class="service__slideshow-container">
+                          
+                        <div class="allSlide fade gdpt__slide">
+                            <img src="./img/service-gdpt-lotus.png" style="width:100%;">
+                        </div>
+                        
+                        <div class="allSlide fade gdpt__slide">
+                            <img src="./img/service-gdpt-camp.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="allSlide fade gdpt__slide">
+                            <img src="./img/service-gdpt-40-year.jpg" style="width:100%">
+                        </div>
+                        
+                        <a class="prev" onclick="gdpt_plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="gdpt_plusSlides(1)">&#10095;</a>
+                     
+                   
+                      <div style="text-align:center">
+                        <span class="dot gdpt__dot" onclick="gdpt_currentSlide(1)"></span>
+                        <span class="dot gdpt__dot" onclick="gdpt_currentSlide(2)"></span>
+                        <span class="dot gdpt__dot" onclick="gdpt_currentSlide(3)"></span>
+                      </div>
+                  </div>
+                      </div>
+                      <div class="text-box">
+                          <h3>Huyen Quang Youth Association</h3>
+                          <h4>2009 - present</h4>
+                          <p style="color:rgb(104, 171, 247);"><strong>───</strong></p>
+                          <p>HQ is an organization aimed to teach youths to understand the teachings of Buddhism and to be valuable contributors in their community. As a troop leader, I now assist in leading weekly activities for +50 youths, like leading educational games, family gatherings and camping trips, and serving meals.</p>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+            <!-- Viet Ngu -->
+            <section class="service__section">
+                <section id="service__viet-ngu">
+                  <div class="container reveal">
+                    <div class="text-container">
+                      <div class="text-box-image">
+                      <div class="service__slideshow-container">
+                          
+                        <div class="allSlide fade viet__slide">
+                            <img src="./img/service-gdpt-temple.jpg" style="width:100%;">
+                        </div>
+                        
+                        <div class="allSlide fade viet__slide">
+                            <img src="./img/service-gdpt-chanh-dien.jpg" style="width:100%">
+                        </div>
+                        
+                        <!-- <div class="allSlide fade viet__slide">
+                            <img src="./img/service-lion-gdpt.jpeg" style="width:100%">
+                        </div> -->
+                        
+                        <a class="prev" onclick="viet_plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="viet_plusSlides(1)">&#10095;</a>
+                     
+                   
+                      <div style="text-align:center">
+                        <!-- <span class="dot viet__dot" onclick="viet_currentSlide(1)"></span> -->
+                        <span class="dot viet__dot" onclick="viet_currentSlide(2)"></span>
+                        <span class="dot viet__dot" onclick="viet_currentSlide(3)"></span>
+                      </div>
+                  </div>
+                      </div>
+                      <div class="text-box">
+                          <h3>Huyen Quang School of Vietnamese</h3>
+                          <h4>2006 - present</h4>
+                          <p style="color:rgb(104, 171, 247);"><strong>───</strong></p>
+                          <p>As an Asian American, I value and embrace preserving my culture, and hope to encourage other youths to do the same. After completing Vietnamese school from 2006-2018, I volunteered in weekly Sunday classes to teach Vietnamese to classroom of thirty 8-10 year old elementary students and help with miscellaneous tasks in the principal's office.</p>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+        </div>
+    </section>
+</body>
